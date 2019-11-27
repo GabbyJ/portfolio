@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/31fc375084.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="dist/css/index.min.css">
+    <title>Official Portfolio</title>
+</head>
+<body>
+    <!-- BACKGROUND -->
+    <div id="bg">
+        <canvas></canvas>
+        <canvas></canvas>
+        <canvas></canvas>
+    </div>
+    <!-- NAV -->
+    <div class="primary-nav">
+        <button href="#" class="hamburger open-panel nav-toggle">
+            <span class="screen-reader-text">Menu</span>
+        </button>
+        <nav role="navigation" class="menu">
+            <img class="logo" src="images/gj-logo-purple.png" alt="">
+            <div class="overflow-container">
+                <ul class="menu-dropdown">
+                    <li><a href="#">Home</a><span class="icon"><i class="fas fa-home"></i></span></li>
+                    <li><a href="#">About</a><span class="icon"><i class="fas fa-address-card"></i></span></li>
+                    <li><a href="#">Portfolio</a><span class="icon"><i class="fas fa-folder-open"></i></i></span></li>
+                    <li><a href="#">Services</a><span class="icon"><i class="fas fa-laptop-code"></i></span></li>
+                    <li><a href="#">Contact</a><span class="icon"><i class="fa fa-envelope"></i></span></li>
+                    <li><a href="#">Hire</a><span class="icon"><i class="fas fa-handshake"></i></span></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="container">
+        
+        <!-- HEADER -->
+        <header>
+            <img class="profilepic" src="images/myAvatar-4.svg" alt="">
+            <h1 class="name">Hey, I'm Gabrielle Jacobs</h1>
+            <p class="tagline">Web Developer – Photographer – Traveler</p>
+            <div class="socials">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-mobile-alt"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+        </header>
+        <!-- ABOUT -->
+        <section class="about">
+            <p class="summary">Born and raised Pittsburgher who now lives in Dallas, TX.
+                I'm a self taught web developer who loves learning as much as I can. In 
+                my free time, I'm usually playing an instrument, watching movies,
+                or traveling the world. Keep scrolling down to find out more about me!
+            </p>
+            <a href="#" target="_blank"><button>View Resume</button></a>
+            <a href="#" target="_blank"><button>View Portfolio</button></a>
+            <h2>Skills</h2>
+            <h2>Experience</h2>
+            <h2>Education</h2>
+        </section>
+        <!-- SERVICES -->
+        <section class="service">
+            <h2>Services</h2>
+            <div class="services">
+                <div class="design">
+                    <i class="fas fa-paint-brush"></i>
+                    <p>Web Design</p>
+                </div>
+                <div class="development">
+                    <i class="fas fa-code"></i>
+                    <p>Web Development</p>
+                </div>
+                <div class="photography">
+                    <i class="fas fa-camera"></i>
+                    <p>Photography</p>
+                </div>
+            </div>
+        </section>
+        <!-- PORTFOLIO -->
+        <section class="portfolio">
+            <h2>Portfolio</h2>
+            <!-- Language icons
+                HTML - <i class="fab fa-html5"></i>
+                CSS3 - <i class="fab fa-css3-alt"></i>
+                Sass - <i class="fab fa-sass"></i>
+                Bootstrap - <i class="fab fa-bootstrap"></i>
+                Javascript - <i class="fab fa-js"></i>
+                jQuery - 
+                Python - <i class="fab fa-python"></i>
+                React - <i class="fab fa-react"></i>
+                Node - <i class="fab fa-node"></i>
+                WordPress - <i class="fab fa-wordpress"></i>
+            -->
+        </section>
+        <!-- CONTACT -->
+        <section class="contact">
+            <h2>Message Me</h2>
+            <form action="#">
+                <label for="name">Name:</label><br>
+                <input type="text" name="user_name" id="name"><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" name="user_email" id="email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea name="user_message" id="msg"></textarea>
+            </form>
+            <button type="submit">Send</button>
+        </section>
+        <!-- HIRE ME -->
+        <section class="hireme">
+            <h2>Hire Me</h2>
+            <form action="#">
+                <label for="name">Name:</label><br>
+                <input type="text" name="client_name" id="name"><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" name="client_email" id="email"><br><br>
+                <label for="company">Company/Organization:</label><br>
+                <input type="text" name="client_company" id="company"><br><br>
+                <label for="services">What services do you need?</label><br>
+                <div class="service_list">
+                    <input type="checkbox" name="logo_design" id="service1">Logo Design<br>
+                    <input type="checkbox" name="web_design" id="service1">Web Design<br>
+                    <input type="checkbox" name="photography" id="service1">Photography<br>
+                    <input type="checkbox" name="web_dev" id="service1">Custom Web Development<br>
+                    <input type="checkbox" name="ecommerce" id="service1">E-commerce<br>
+                    <input type="checkbox" name="wordpress" id="service1">WordPress or other CMS<br>
+                    <input type="checkbox" name="maintenance" id="service1">Maintenance<br>
+                </div>
+            </form>
+            <!-- HIRE ME PRICING -->
+            <div class="pricing">
+                <h3>Basic</h3>
+                <h3>Standard</h3>
+                <h3>Custom</h3>
+                <!-- HIRE ME BUDGET SLIDER -->
+                <h1>Budget</h1>
+                <div class="slidecontainer">
+                    <input type="range" min="100" max="5000" value="2000" class="slider" step="100" id="myRange">
+                    <div class="ticks-1">
+                    <span class="tick">$100</span>
+                    <span class="tick">$1000</span>
+                    <span class="tick">$2000</span>
+                    <span class="tick">$3000</span>
+                    <span class="tick">$4000</span>
+                    <span class="tick">$5000</span>
+                    </div>
+                    <h1 class="amount">$ <span id="demo"></span></h1>
+                </div>
+                <!-- HIRE ME DEADLINE SLIDER -->
+                <h1>Deadline</h1>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="5" value="2" class="slider" step="1" id="myRange">
+                    <div class="ticks-2">
+                        <div class="tick"><p>2 weeks</p></div>
+                        <span class="tick"><p>1 month</p></span>
+                        <span class="tick"><p>2 months</p></span>
+                        <span class="tick"><p>3 months</p></span>
+                        <span class="tick"><p>4 months</p></span>
+                        <span class="tick"><p>5+ months</p></span>
+                    </div>
+                </div>
+            </div>
+            <!-- PROJECT DETAILS -->
+            <form action="#">
+                <label for="details">Project Details:</label><br>
+                <textarea name="user_details" id="details"></textarea>
+            </form>
+        </section>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <section class="footer">
+            <div class="footer-contact">
+                <img class="logo-footer" src="images/gj-logo-pink.png" alt="">
+                <p>Live like no one else, so you can live like no one else.</p>
+            </div>
+            <div class="footer-socials">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-mobile-alt"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+            <hr>
+            <p class="copyright">© 2020 Gabrielle Jacobs</p>
+        </section>
+    </footer>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
